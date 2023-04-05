@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>wikiHow UIB Generator</title>
+	<script type="text/javascript">
+		function generateUib() {
+			document.write(
+					"<html>" + 
+					"<head>" + 
+					"<title>Success!</title>" + 
+					"</head>" + 
+					"<body>" + 
+					"<center>" + 
+					"<h1>Success!</h1>" + 
+					"<hr>" + 
+					"Copy this code and paste it on your profile!<br>Right Click and Copy!<br><br>" + 
+					"<textarea id='codes' style='width:225px; height: 315px;'>"	+ 
+					"{{Userbox\n" + 
+					"  |border-c = " + document.getElementById('border-c').value + "\n" + 
+					"  |id-c = " + document.getElementById('id-c').value + "\n" + 
+					"  |id-s = " + document.getElementById('id-s').value + "\n" + 
+					"  |id-fc = " + document.getElementById('id-fc').value + "\n" + 
+					"  |info-c = " + document.getElementById('info-c').value + "\n" + 
+					"  |info-s = " + document.getElementById('info-s').value + "\n" + 
+					"  |info-fc = " + document.getElementById('info-fc').value + "\n" + 
+					"  |id = " + document.getElementById('id').value + "\n" + 
+					"  |info = " + document.getElementById('info').value + "\n" + 
+					"}}" + 
+					"</textarea>" + 
+					"</body>" + 
+					"</html>"
+				);
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<h1>WikiHow UIB Generator</h1>
+		<hr>
+		<table border="0" style="background-color:none;border-collapse:collapse;border:0px solid #FFCC00;color:#000000;" cellpadding="3" cellspacing="0">
+			<tr>
+				<td><p align="right">UIB Border Color</p></td>
+				<td><input type="color" id="border-c"></td>
+			</tr>
+			<tr>
+				<td><p align="right">UIB Icon BG Color</p></td>
+				<td><input type="color" id="id-c"></td>
+			</tr>
+			<tr>
+				<td><p align="right">UIB Icon FG Color (if text used)</p></td>
+				<td><input type="color" id="id-fc"></td>
+			</tr>
+			<tr>
+				<td><p align="right">Info BG Color</p></td>
+				<td><input type="color" id="info-c"></td>
+			</tr>
+			<tr>
+				<td><p align="right">Info FG Color</p></td>
+				<td><input type="color" id="info-fc"></td>
+			</tr>
+			<tr>
+				<td><p align="right">UIB Icon Size</p></td>
+				<td><input type="number" value="14" id="id-s" size="3"></td>
+			</tr>
+			<tr>
+				<td><p align="right">Info Size</p></td>
+				<td><input type="number" value="14" id="info-s" size="3"></td>
+			</tr>
+			<tr>
+				<td><p align="right">Icon Text (img not supported here yet)</p></td>
+				<td><input type="text" id="id" placeholder="Enter Icon Text Or Emoji Here"></td>
+			</tr>
+			<tr>
+				<td><p align="right">Info Text</p></td>
+				<td><input type="text" id="info" placeholder="Enter Info Text Or Emoji Here"></td>
+			</tr>
+		</table>
+		<button type="submit" style="cursor: pointer; background-color:lime; color: navy; border: 1px solid navy; border-radius: 0.5%; font-size: 1.5em;" onclick="generateUib();">Generate!</button>
+</body>
+</html>
