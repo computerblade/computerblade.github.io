@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <generator>RSS Builder by B!Soft</generator>
+    <title>ComputerBlade</title>
+    <link>https://computerblade.github.io/</link>
+    <description>Live Blog Feed of ComputerBlade's Posts.</description>
+    <language>en-gb</language>
+    <managingEditor>ayproductionsteam@gmail.com</managingEditor>
+    <webMaster>ayproductionsteam@gmail.com</webMaster>
+    <copyright>2023</copyright>
+    <item>
+      <title>POST-TEST-1</title>
+      <pubDate>Tue, 27 Dec 2022 15:02:29 +0500</pubDate>
+      <link>https://computerblade.github.io/posts/post-test-1.html</link>
+      <author>system_default</author>
+      <description><![CDATA[Hello World! This is a test post.]]></description>
+    </item>
+  </channel>
+</rss>
